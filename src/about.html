@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <section id="navbar-section">
+        <div class="navbar bg-gray-600 text-white flex justify-between items-center p-5">
+            <div class="logo">
+                <h2 class="font-bold"><a href="index.html">Nsu Capsule</a></h2>
+            </div>
+
+            <div class="nav-items relative mr-7">
+                <ul class="flex justify-around gap-5">
+                    <li><a href="">Home</a></li>
+
+                    <li class="relative group">
+                        <a href="" class="">Academic</a>
+                        <ul class="absolute left-0 hidden group-hover:block bg-gray-700 text-white p-3 rounded shadow-lg">
+                            <li><a href="#academic-section" class="block px-4 py-2 hover:bg-gray-500">Notices</a></li>
+
+                            <li><a href="#academic-section" class="block px-4 py-2 hover:bg-gray-500">Calender</a></li>
+                            <li><a href="#academic-section" class="block px-4 py-2 space-x-4 hover:bg-gray-500 whitespace-nowrap">Course
+                                    Materials</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="">Research</a></li>
+                    <li><a href="">About Me</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="profile" class="bg-cyan-100 min-h-screen ">
+        <div class="profile-items flex flex-col justify-center items-center">
+            <div class="image mt-[100px]">
+            <img src="./images/profile.jpg" class="h-[200px] w-[200px] rounded-full ring-4 ring-cyan-400  ring-offset-cyan-500 hover:ring-5 hover:ring-blue-700"  alt="">
+        </div>
+        <div class="description mt-10 font-stretch-50%">
+            <p>Hello there, I'm <b>Raihan. </b> An undergrad student pursuing CSE. I am passionate about web development. Currently learning:</p>
+           <p>
+            <ul>
+            <li>Machine Learning</li>
+            <li>Python</li>
+            <li>React.js</li>
+           </ul></p>
+           <p>I have some experience to make responsive websites</p>
+        </div>
+    </div>
+        
+    </section>
+    
+</body>
+</html>
