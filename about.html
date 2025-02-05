@@ -7,25 +7,32 @@
     <title>Document</title>
     <link href="output.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
 </head>
 <body>
     <section id="navbar-section">
-        <div class="navbar bg-gray-600 text-white flex justify-between items-center p-5">
+        <div class="navbar text-white bg-gray-900 flex justify-between items-center p-5">
             <div class="logo">
-                <h2 class="font-bold"><a href="index.html">Nsu Capsule</a></h2>
+                <h2 class="font-bold">
+                    <a href="index.html">Nsu Capsule</a>
+                </h2>
             </div>
 
-            <div class="nav-items relative mr-7">
+            <!-- * Desktop and Tablet view -->
+            <div class="nav-items relative mr-7 hidden md:block">
                 <ul class="flex justify-around gap-5">
                     <li><a href="">Home</a></li>
 
                     <li class="relative group">
                         <a href="" class="">Academic</a>
-                        <ul class="absolute left-0 hidden group-hover:block bg-gray-700 text-white p-3 rounded shadow-lg">
-                            <li><a href="#academic-section" class="block px-4 py-2 hover:bg-gray-500">Notices</a></li>
+                        <ul class="absolute left-0 hidden group-hover:block bg-gray-900 text-white p-3 rounded shadow-lg">
+                            <li><a href="#academic-section" class="block px-4 py-2 hover:bg-gray-900">Notices</a></li>
 
-                            <li><a href="#academic-section" class="block px-4 py-2 hover:bg-gray-500">Calender</a></li>
-                            <li><a href="#academic-section" class="block px-4 py-2 space-x-4 hover:bg-gray-500 whitespace-nowrap">Course
+                            <li><a href="#academic-section" class="block px-4 py-2 hover:bg-gray-900">Calender</a></li>
+                            <li><a href="#academic-section" class="block px-4 py-2 space-x-4 hover:bg-gray-900 whitespace-nowrap">Course
                                     Materials</a></li>
                         </ul>
                     </li>
@@ -34,6 +41,27 @@
                     <li><a href="">About Me</a></li>
                 </ul>
             </div>
+
+            <!-- * mobile view -->
+            <div class="md:hidden relative">
+                <!-- Hidden checkbox to control toggle -->
+                <input type="checkbox" id="menu-toggle" class="peer hidden">
+                
+                <!-- Label acts as toggle button -->
+                <label for="menu-toggle" class="cursor-pointer text-2xl">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+    
+                <!-- Menu items -->
+                <div class="hidden peer-checked:flex flex-col absolute top-12 right-0 text-white bg-gray-900 shadow-lg rounded-md w-48 p-4 space-y-2">
+                    <a href="index.html" class="block px-4 py-2 hover:bg-gray-900">Home</a>
+                    <a href="#academic-section" class="block px-4 py-2 hover:bg-gray-900">Academic</a>
+                    <a href="#research-section" class="block px-4 py-2 hover:bg-gray-900">Research</a>
+                    <a href="about.html" class="block px-4 py-2 hover:bg-gray-900">About Me</a>
+                </div>
+            </div>
+             
+
         </div>
     </section>
 
@@ -42,8 +70,8 @@
             <div class="image mt-[100px]">
             <img src="images/profile.jpg" class="h-[200px] w-[200px] rounded-full ring-4 ring-cyan-400  ring-offset-cyan-500 hover:ring-5 hover:ring-blue-700"  alt="">
         </div>
-        <div class="description mt-10 font-stretch-50%">
-            <p>Hello there, I'm <b>Raihan. </b> An undergrad student pursuing CSE. I am passionate about web development. Currently learning:</p>
+        <div class="description lg:mt-10 font-stretch-50%">
+            <p class="text-amber-300">Hello there, I'm <b>Raihan. </b> An undergrad student pursuing CSE. I am passionate about web development. Currently learning:</p>
            <p>
             <ul>
             <li>Machine Learning</li>
