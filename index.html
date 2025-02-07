@@ -8,7 +8,9 @@
     <link href="output.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
@@ -16,29 +18,31 @@
     <section id="navbar-section">
         <div class="navbar text-white bg-gray-900 flex justify-between items-center p-5">
             <div class="logo">
-                <h2 class="font-bold">
+                <h1 class="font-mono text-xl">
                     <a href="index.html">Nsu Capsule</a>
-                </h2>
+                </h1>
             </div>
 
             <!-- * Desktop and Tablet view -->
             <div class="nav-items relative mr-7 hidden md:block">
                 <ul class="flex justify-around gap-5">
-                    <li><a href="">Home</a></li>
+                    <li><a href="" class="hover:bg-gray-200 hover:text-black block px-4 py-2 rounded-lg">Home</a></li>
 
                     <li class="relative group">
-                        <a href="" class="">Academic</a>
-                        <ul class="absolute left-0 hidden group-hover:block bg-gray-900 text-white p-3 rounded shadow-lg">
-                            <li><a href="#academic-section" class="block px-4 py-2 hover:bg-gray-900">Notices</a></li>
+                        <a href="" class="hover:bg-gray-200 hover:text-black block px-4 py-2 rounded-lg">Academic</a>
+                        <ul
+                            class="absolute left-0 hidden group-hover:block bg-gray-900 text-white p-3 rounded shadow-lg">
+                            <li><a href="#academic-section" class="block px-4 py-2 hover:bg-gray-200 hover:text-black">Notices</a></li>
 
-                            <li><a href="#academic-section" class="block px-4 py-2 hover:bg-gray-900">Calender</a></li>
-                            <li><a href="#academic-section" class="block px-4 py-2 space-x-4 hover:bg-gray-900 whitespace-nowrap">Course
+                            <li><a href="#academic-section" class="block px-4 py-2 hover:bg-gray-200 hover:text-black">Calender</a></li>
+                            <li><a href="#academic-section"
+                                    class="block px-4 py-2 space-x-4 hover:bg-gray-200 hover:text-black whitespace-nowrap">Course
                                     Materials</a></li>
                         </ul>
                     </li>
 
-                    <li><a href="">Research</a></li>
-                    <li><a href="">About Me</a></li>
+                    <li><a href="" class="hover:bg-gray-200 hover:text-black block px-4 py-2 rounded-lg">Research</a></li>
+                    <li><a href="" class="hover:bg-gray-200 hover:text-black block px-4 py-2 rounded-lg">About Me</a></li>
                 </ul>
             </div>
 
@@ -46,27 +50,29 @@
             <div class="md:hidden relative">
                 <!-- Hidden checkbox to control toggle -->
                 <input type="checkbox" id="menu-toggle" class="peer hidden">
-                
+
                 <!-- Label acts as toggle button -->
                 <label for="menu-toggle" class="cursor-pointer text-2xl">
                     <i class="fa-solid fa-bars"></i>
                 </label>
-    
+
                 <!-- Menu items -->
-                <div class="hidden peer-checked:flex flex-col absolute top-12 right-0 text-white bg-gray-900 shadow-lg rounded-md w-48 p-4 space-y-2">
-                    <a href="index.html" class="block px-4 py-2 hover:bg-gray-900">Home</a>
-                    <a href="#academic-section" class="block px-4 py-2 hover:bg-gray-900">Academic</a>
-                    <a href="#research-section" class="block px-4 py-2 hover:bg-gray-900">Research</a>
-                    <a href="about.html" class="block px-4 py-2 hover:bg-gray-900">About Me</a>
+                <div
+                    class="hidden peer-checked:flex flex-col absolute top-12 right-0 text-white bg-gray-900 shadow-lg rounded-md w-48 p-4 space-y-2">
+                    <a href="index.html" class="block px-4 py-2 hover:bg-gray-200 hover:text-black">Home</a>
+                    <a href="#academic-section" class="block px-4 py-2 hover:bg-gray-200 hover:text-black">Academic</a>
+                    <a href="#research-section" class="block px-4 py-2 hover:bg-gray-200 hover:text-black">Research</a>
+                    <a href="about.html" class="block px-4 py-2 hover:bg-gray-200 hover:text-black">About Me</a>
                 </div>
             </div>
-             
+
 
         </div>
     </section>
 
     <section id="home-section" class="flex justify-center items-center bg-violet-50">
-        <div class="mt-10 mb-10 home-items p-8 leading-7 bg-white shadow-2xl rounded-2xl flex flex-col items-center text-left">
+        <div
+            class="mt-10 mb-10 home-items p-8 leading-7 bg-white shadow-2xl rounded-2xl flex flex-col items-center text-left">
             <div class="images flex gap-4 overflow-auto">
                 <img src="images/insideNsu.jpg" class="max-w-full h-[300px] rounded-2xl mb-4" alt="">
                 <img src="images/SAC.jpg" class="max-w-full h-[300px] rounded-2xl mb-4" alt="">
@@ -84,27 +90,32 @@
         </div>
     </section>
 
-    <section id="academic-section" class="bg-gray-50">
-        <div class="academic p-8 md:ml-20 ">
-            <p class="font-bold mb-2 lg:mt-10">Notices:</p>
-            <p class="mb-3"><a target="_blank" href="https://www.northsouth.edu/nsu-announcements/research-project.html"
-                    class="text-blue-800">Research Project Proposals</a><br>
-                03/02/2025</p>
+    <section id="academic-section" class="h-auto flex flex-col justify-center items-center bg-gray-600">
+        <div class="academic mt-5 mb-5  flex flex-col md:flex-row justify-center gap-4">
+            <div class="notices bg-white p-8 rounded-lg hover:shadow-xl hover:shadow-white hover:ring-7 hover:ring-blue-900">
+                <p class="font-bold mb-2">Notices:</p>
+                <p class="mb-3"><a target="_blank"
+                        href="https://www.northsouth.edu/nsu-announcements/research-project.html"
+                        class="text-blue-800">Research Project Proposals</a><br>
+                    03/02/2025</p>
 
-            <p class="mb-3"><a target="_blank" href="https://www.northsouth.edu/nsu-announcements/research-project.html"
-                    class="text-blue-800">APSCO-BIT University-Master Program 2O25 </a><br>26/01/2025</p>
-            <p class="mb-3"><a href="https://www.northsouth.edu/nsu-announcements/launching-ceremony-of-iyq.html"
-                    target="_blank" class="text-blue-800">Invitation for the Launching Ceremony of IYQ
-                </a><br> 23/01/2025</p>
+                <p class="mb-3"><a target="_blank"
+                        href="https://www.northsouth.edu/nsu-announcements/research-project.html"
+                        class="text-blue-800">APSCO-BIT University-Master Program 2O25 </a><br>26/01/2025</p>
+                <p class="mb-3"><a href="https://www.northsouth.edu/nsu-announcements/launching-ceremony-of-iyq.html"
+                        target="_blank" class="text-blue-800">Invitation for the Launching Ceremony of IYQ
+                    </a><br> 23/01/2025</p>
+            </div>
 
 
-            <p class="mt-10 mb-3 font-bold">Calendar: <br></p>
+<div class="calendar  p-8 bg-white rounded-lg hover:shadow-2xl hover:shadow-white hover:ring-7 hover:ring-blue-900"><p class="mb-3 font-bold ">Calendar: <br></p>
             <p><a class="text-blue-800 mb-3"
                     href="https://www.northsouth.edu/newassets/images/Registrs%20Office/academic-calendar-spring-2025-26-jan-2025.pdf"
                     target="_blank">Spring 2025 Calendar</a></p>
-            </p>
+            </p></div>
+            
 
-            <div class="course-materials mt-10">
+            <div class="course-materials p-8 bg-white rounded-lg hover:shadow-2xl hover:shadow-white hover:ring-7 hover:ring-blue-900">
                 <p class="font-bold mb-3">Course Materials:</p>
                 <p>
                 <ul class="text-blue-800 flex flex-col gap-3">
@@ -120,8 +131,8 @@
     </section>
 
 
-    <section id="research-section">
-        <div class="research-items md:ml-20 p-8 ">
+    <section id="research-section" class="bg-violet-100">
+        <div class="research-items ml-5 mr-5 md:ml-20 md:mr-20 rounded-lg p-8">
             <p class="font-bold mb-3">Research:</p>
             <p class="mb-3"><a class="text-blue-800"
                     href="https://www.northsouth.edu/research-office/research-projects/" target="_blank">NSU Research
@@ -137,9 +148,9 @@
 
         </div>
     </section>
-    
 
-    <section id="footer-section" class="bg-gray-100 h-auto flex flex-col justify-center items-center p-4">
+
+    <section id="footer-section" class="bg-blue-900 text-white h-auto flex flex-col justify-center items-center p-4">
         <div class="mt-6 footer-items flex flex-wrap justify-center items-center gap-4 sm:gap-8 max-w-[90%]">
             <p><i class="fa-brands fa-facebook fa-2xl" style="color: #005eff;"></i></p>
             <p><i class="fa-brands fa-whatsapp fa-2xl" style="color: #00d65d;"></i></p>
@@ -151,7 +162,7 @@
         </div>
         <p class="mt-10 text-center">&copy; Raihan Sharif</p>
     </section>
-    
+
 </body>
 
 </html>
